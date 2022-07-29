@@ -579,19 +579,17 @@ ul.tab-list span.page {
 
 
 /* encoder generator */
-.encoder-wrapper {
-     display: flex;
-     justify-content: center;
-}
 
 .encoder {
      display: flex;
      flex-direction: column;
-     align-self: center;
+     gap: 20px;
 }
 
 .encoder__item {
-     max-width: 760px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
 }
 
 .btn-encoder {
@@ -599,7 +597,7 @@ ul.tab-list span.page {
 }
 
 textarea {
-     width: 100%;
+     max-width: 768px;
      min-height: 300px;
      font-family: 'Roboto', sans-serif;
      font-style: normal;
@@ -607,6 +605,10 @@ textarea {
      font-size: 14px;
      padding: 10px;
      color: var(--gold);
+}
+
+textarea::-webkit-scrollbar {
+     width: 0px;
 }
 
 .encoder-form__item {
@@ -641,6 +643,9 @@ textarea {
      resize: none;
 }
 
+label {
+     font-size: 15px;
+}
 
 /* footer */
 .footer {

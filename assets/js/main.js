@@ -88,9 +88,30 @@ window.onload = function () {
 
 // decoder
 function encode() {
-     document.getElementById('html-encoded').value = htmlEntities(document.getElementById('html-decode').value);
+     document.getElementById('html-encoded').value = htmlEntities(document.getElementById('html-decoded').value);
+}
+
+// Выделение и копирование из textarea
+function copy() {
+     let textarea = document.getElementById("html-encoded");
+     textarea.select();
+     document.execCommand("copy");
 }
 
 function htmlEntities(str) {
      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
+
+// textarea autoheight
+const textareas = document.querySelectorAll("textarea");
+
+for (let textarea of textareas) {
+     textarea.addEventListener("copy", e => {
+          let scHeight = e.target.scrollHeight;
+          textarea.style.height = `${scHeight}px`;
+     });
+}
+
+
+
+
