@@ -78,20 +78,20 @@
                     <div class="section section-encoder">
                          <div class="container">
                               <div class="encoder-wrapper">
-                                   <div class="encoder-form">
-                                        <fieldset class="encoder" style="width: 100%;border: none;">
-                                             <div class="encoder__item">
-                                                  <label for="">HTML</label>
-                                                  <textarea class="encoder-form__item encoder-form-textarea"
-                                                       id="html-decode" rows="2" placeholder="html код"></textarea>
+                                   <div class="encoder">
+                                        <div class="encoder__item">
+                                             <label for="html-decoded">HTML decode</label>
+                                             <textarea class="encoder-form__item encoder-form-textarea"
+                                                  id="html-decoded" placeholder="html код"></textarea>
 
-                                                  <label for="">HTML encode</label>
-                                                  <textarea class="encoder-form__item encoder-form-textarea" cols="60"
-                                                       id="html-encoded" rows="2" placeholder="Результат"></textarea>
-                                             </div>
-                                             <button class="encoder__item btn btn-encoder"
-                                                  onclick="encode()">Encode</button>
-                                        </fieldset>
+
+                                             <label for="html-encoded">HTML encode</label>
+                                             <textarea class="encoder-form__item encoder-form-textarea"
+                                                  id="html-encoded" placeholder="Результат"></textarea>
+                                        </div>
+
+                                        <button class="encoder__item btn btn-encoder"
+                                             onclick="encode(); copy();">Encode</button>
                                    </div>
                               </div>
                          </div>
