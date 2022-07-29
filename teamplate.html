@@ -50,30 +50,53 @@
           <main class="main">
                <div class="section section-content">
                     <div class="container">
-                         <h2 class="page__title">Шаблон</h2>
+                         <h2 class="page__title">Шаблон для разработки</h2>
                          <ul class="breadcrumbs">
                               <li><a href="index.html">Главная</a></li>
-                              <li><a href="page_1.html" class="link-disabled">Страница 1</a></li>
+                              <li><a href="page_1.html" class="link-disabled">Страница 4</a></li>
                          </ul>
 
                          <div class="panel-navigation">
                               <a href="index.html" class="btn">На главную</a>
                          </div>
-                         <h3 class="page__title">Заголовок</h3>
+                         <h3 class="page__title">Заготовки для разработки web-rocket</h3>
                          <hr class="hr-yellow">
-                         <h4 class="page__subtitle">Подзаголовок</h4>
+                         <h4 class="page__subtitle">Кнопки навигации, шифровщик HTML для вставки кода.</h4>
 
-                         <br>
-                         <!-- Кнопка назад -->
-                         <a href="#" class="btn" onclick="history.back();return false;">Назад</a>
-                         <!--  -->
+                         <div class="panel-navigation">
+                              <!-- Кнопка назад -->
+                              <a href="#" class="btn" onclick="history.back();return false;">Назад</a>
+                              <!--  -->
 
-                         <!-- Кнопка смотреть DEMO -->
-                         <a href="#" class="btn">Смотреть Демо</a>
-                         <!--  -->
-
-
+                              <!-- Кнопка смотреть DEMO -->
+                              <a href="#" class="btn">Смотреть Демо</a>
+                              <!--  -->
+                         </div>
                     </div>
+
+                    <!-- encoder -->
+                    <div class="section section-encoder">
+                         <div class="container">
+                              <div class="encoder-wrapper">
+                                   <div class="encoder-form">
+                                        <fieldset class="encoder" style="width: 100%;border: none;">
+                                             <div class="encoder__item">
+                                                  <label for="">HTML</label>
+                                                  <textarea class="encoder-form__item encoder-form-textarea"
+                                                       id="html-decode" rows="2" placeholder="html код"></textarea>
+
+                                                  <label for="">HTML encode</label>
+                                                  <textarea class="encoder-form__item encoder-form-textarea" cols="60"
+                                                       id="html-encoded" rows="2" placeholder="Результат"></textarea>
+                                             </div>
+                                             <button class="encoder__item btn btn-encoder"
+                                                  onclick="encode()">Encode</button>
+                                        </fieldset>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
                </div>
           </main>
 

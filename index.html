@@ -103,6 +103,12 @@
                                                                  <span class="page">3</span>
                                                             </a>
                                                        </li>
+                                                       <li class="tab-list__item">
+                                                            <a href="teamplate.html">
+                                                                 <span class="text">Шаблон для разработки</span>
+                                                                 <span class="page">4</span>
+                                                            </a>
+                                                       </li>
                                                   </ul>
                                              </div>
                                         </div>
@@ -197,101 +203,6 @@
                     </div>
                </div>
 
-               <div class="section section-decoder">
-                    <div class="container container__decoder">
-                         <div class="decoder-wrapper">
-                              <div class="decoder-form">
-                                   <fieldset class="decoder" style="width: 100%;border: none;">
-                                        <div class="decoder__item">
-                                             <label for="">HTML</label>
-                                             <textarea class="contacts-form__item contacts-form-textarea"
-                                                  id="html-decode" rows="2" placeholder="html код"></textarea>
-
-                                             <label for="">HTML encode</label>
-                                             <textarea class="contacts-form__item contacts-form-textarea" cols="60"
-                                                  id="html-encoded" rows="2" placeholder="Результат"></textarea>
-                                        </div>
-                                        <button class="decoder__item btn btn-decoder" onclick="encode()">Encode</button>
-                                   </fieldset>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-               <style>
-                    .decoder-wrapper {
-                         display: flex;
-                         justify-content: center;
-                    }
-
-                    .decoder {
-                         display: flex;
-                         flex-direction: column;
-                         align-self: center;
-                    }
-
-                    .decoder__item {
-                         max-width: 760px;
-                    }
-
-                    .btn-decoder {
-                         align-self: flex-start;
-                    }
-
-                    textarea {
-                         width: 100%;
-                         min-height: 300px;
-                         font-family: 'Roboto', sans-serif;
-                         font-style: normal;
-                         font-weight: normal;
-                         font-size: 14px;
-                         padding: 10px;
-                         color: var(--gold);
-                    }
-
-                    .contacts-form__item {
-                         border: 2px solid var(--gold);
-                         background: rgba(0, 0, 0, 0.5);
-                    }
-
-                    .contacts-form-textarea {
-                         padding: 15px 15px;
-                    }
-
-                    #html,
-                    #message {
-                         resize: none;
-                    }
-
-                    .contacts-form__item {
-                         -webkit-transition: all 0.3s ease;
-                         -moz--transition: all 0.3s ease;
-                         transition: all 0.3s ease;
-                    }
-
-                    .contacts-form__item:hover {
-                         cursor: pointer;
-                    }
-
-                    .contacts-form__item:focus {
-                         outline: none;
-                         box-shadow: 0px 0px 5px 3px rgb(236 232 157);
-                         -webkit-box-shadow: 0px 0px 5px 3px rgb(236 232 157);
-                         -moz-box-shadow: 0px 0px 5px 3px rgb(236 232 157);
-                         -webkit-transition: all 0.3s ease;
-                         -moz--transition: all 0.3s ease;
-                         transition: all 0.3s ease;
-                         cursor: text;
-                    }
-               </style>
-               <script>
-                    function encode() {
-                         document.getElementById('html-encoded').value = htmlEntities(document.getElementById('html-decode').value);
-                    }
-
-                    function htmlEntities(str) {
-                         return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-                    }
-               </script>
           </main>
 
           <footer class="footer">

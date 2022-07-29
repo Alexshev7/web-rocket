@@ -87,3 +87,10 @@ window.onload = function () {
 
 
 // decoder
+function encode() {
+     document.getElementById('html-encoded').value = htmlEntities(document.getElementById('html-decode').value);
+}
+
+function htmlEntities(str) {
+     return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
