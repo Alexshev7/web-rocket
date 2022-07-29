@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../assets/css/style.css">
+     <title>Прижать футер Flexbox</title>
+</head>
+
+<body>
+
+     <div class="wrapper">
+          <header class="header">
+
+          </header>
+
+          <main class="main">
+
+          </main>
+
+          <footer class="footer">
+
+          </footer>
+     </div>
+
+     <style>
+          html,
+          body {
+               background-color: #333333;
+          }
+
+          .header {
+               background-color: #764b45;
+               height: 100px;
+          }
+
+          .footer {
+               background-color: #775f8d;
+               height: 100px;
+          }
+
+          /* Стили для прижатия */
+          html,
+          body {
+               height: 100%;
+          }
+
+          .wrapper {
+               min-height: 100%;
+               display: flex;
+               flex-direction: column;
+          }
+
+          .main {
+               flex: 1 1 auto;
+          }
+     </style>
+
+     <script src="../assets/js/main.js"></script>
+     <script src="../assets/js/clipboard.min.js"></script>
+     <script src="../assets/js/highlight.min.js"></script>
+     <script src="../assets/js/highlightjs-line-numbers.min.js"></script>
+
+</body>
+
+</html>

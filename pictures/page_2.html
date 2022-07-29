@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../assets/css/style.css">
+     <title>Работа с изображениями</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="../assets/css/atom-one-light.min.css">
+</head>
+
+<body>
+
+     <div class="wrapper">
+          <header class="header">
+               <div class="container header__container">
+                    <a href="../index.html" class="header__logo">
+                         <img class="rocket__logo" src="../assets/svg/rocket_logo.svg" alt="logo">
+                         <div class="logo__titles">
+                              <h1 class="logo__title">Web-Rocket</h1>
+                              <h2 class="logo__subtitle">by Alexshev</h2>
+                         </div>
+                    </a>
+                    <div class="header__menu menu">
+                         <div class="menu__icon">
+                              <span></span>
+                         </div>
+                         <div class="underlay__menu"></div>
+                         <nav class="menu__body">
+                              <a href="#" class="burger__logo">
+                                   <h1 class="logo__title">Web-Rocket</h1>
+                                   <h2 class="logo__subtitle">by Alexshev</h2>
+                              </a>
+                              <ul class="menu__list">
+                                   <li class="menu__item"><a href="../index.html" class="menu__link">Главная</a></li>
+                                   <li class="menu__item"><a href="../materials.html" class="menu__link">Полезности</a>
+                                   </li>
+                                   <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+                              </ul>
+                         </nav>
+                    </div>
+               </div>
+          </header>
+
+          <main class="main">
+               <div class="section section-content">
+                    <div class="container">
+                         <h2 class="page__title">Работа с изображениями</h2>
+                         <ul class="breadcrumbs">
+                              <li><a href="../index.html">Главная</a></li>
+                              <li><a href="page_1.html" class="link-disabled">Страница 1</a></li>
+                         </ul>
+
+                         <div class="panel-navigation">
+                              <a href="../index.html" class="btn">На главную</a>
+                         </div>
+                         <h3 class="page__title">Примеры адаптивности изображений в рядах и колонках</h3>
+                         <hr class="hr-yellow">
+
+                         <br>
+                         <h4 class="page__subtitle">Пример 1. Три колонки с разными по размеру картинками</h4>
+                         <section class="section section-cards">
+                              <div class="cards__row">
+                                   <div class="cards__column">
+                                        <div class="cards__item">
+                                             <div class="cards__image">
+                                                  <img src="../assets/img/800x400.jpg" alt="">
+                                             </div>
+                                             <div class="cards__body">
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                                                  corrupti a voluptatibus autem eaque aut nisi quis ex sequi!
+                                                  Ducimus necessitatibus deleniti mollitia ex dignissimos odio
+                                                  obcaecati totam est nesciunt?
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="cards__column">
+                                        <div class="cards__item">
+                                             <div class="cards__image">
+                                                  <img src="../assets/img/400x600.jpg" alt="">
+                                             </div>
+                                             <div class="cards__body">
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                                                  corrupti a voluptatibus autem eaque aut nisi quis ex sequi!
+                                                  Ducimus necessitatibus deleniti mollitia ex dignissimos odio
+                                                  obcaecati totam est nesciunt?
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                                                  corrupti a voluptatibus autem eaque aut nisi quis ex sequi!
+                                                  Ducimus necessitatibus deleniti mollitia ex dignissimos odio
+                                                  obcaecati totam est nesciunt?
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="cards__column">
+                                        <div class="cards__item">
+                                             <div class="cards__image">
+                                                  <img src="../assets/img/1300x200.jpg" alt="">
+                                             </div>
+                                             <div class="cards__body">
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                                                  corrupti a voluptatibus autem eaque aut nisi quis ex sequi!
+                                                  Ducimus necessitatibus deleniti mollitia ex dignissimos odio
+                                                  obcaecati totam est nesciunt?
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </section>
+                         <!-- code example 1 -->
+                         <div class="section section-code">
+                              <div style="flex: 1 1 30%;" class="code-wrapper">
+                                   <h5 class="language">HTML – Пример 1</h5>
+                                   <div class="code-example">
+                                        <pre>
+      <code id="btn-code-2" class="html">&lt;div class="cards__row"&gt;
+   &lt;div class="cards__column"&gt;
+         &lt;div class="cards__item"&gt;
+            &lt;div class="cards__image"&gt;
+               &lt;img src="../assets/img/800x400.jpg"  alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="cards__body"&gt;
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti
+               a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus
+               deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+     &lt;div class="cards__column"&gt;
+          &lt;div class="cards__item"&gt;
+               &lt;div class="cards__image"&gt;
+                    &lt;img src="../assets/img/400x600.jpg" alt=""&gt;
+               &lt;/div&gt;
+               &lt;div class="cards__body"&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti
+                    a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus
+                    necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam
+                    est nesciunt?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti a
+                    voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus
+                    deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+               &lt;/div&gt;
+          &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class="cards__column"&gt;
+          &lt;div class="cards__item"&gt;
+               &lt;div class="cards__image"&gt;
+                    &lt;img src="../assets/img/1300x200.jpg" alt=""&gt;
+               &lt;/div&gt;
+               &lt;div class="cards__body"&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti
+                    a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus
+                    necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam est
+                    nesciunt?
+               &lt;/div&gt;
+          &lt;/div&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+      </code>
+   </pre>
+                                        <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-2"
+                                             src="../assets/svg/copy.svg" alt="copy">
+                                   </div>
+                              </div>
+
+                              <div style="flex: 1 1 0%;" class="code-wrapper">
+                                   <h5 class="language">CSS – Пример 1</h5>
+                                   <div class="code-example">
+                                        <pre>
+     <code id="btn-code-3">.cards__row {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.cards__column {
+     flex: 0 1 33.333%;
+     padding: 0 15px;
+}
+
+.cards__image {
+     padding: 0px 0px 58% 0px;
+     margin: 0px 0px 20px 0px;
+     overflow: hidden;
+     position: relative;
+}
+
+.cards__image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     top: 0;
+     left: 0;
+}
+
+/* object-fit: cover;  заставляет объект полностью поместиться внутрь не меняя размеры */
+/* object-fit: fill;  позволяет объекту полностью заполнить содержимое родителя, используя свои размеры */
+/* object-fit: contain; заставляет объект полностью поместиться внутрь родителя */
+/* object-fit: none; вписываются в размер родителя, масштабируюсь так, чтобы показать как можно больше */
+     </code>
+</pre>
+                                        <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-3"
+                                             src="../assets/svg/copy.svg" alt="copy">
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /code -->
+
+                         <style>
+                              .cards__row {
+                                   display: flex;
+                                   flex-wrap: wrap;
+                                   justify-content: center;
+                                   gap: 15px;
+                              }
+
+                              .cards__column {
+                                   flex: 0 1 30.333%;
+                              }
+
+                              .cards__image {
+                                   padding: 0px 0px 58% 0px;
+                                   margin: 0px 0px 20px 0px;
+                                   overflow: hidden;
+                                   position: relative;
+                              }
+
+                              .cards__image img {
+                                   width: 100%;
+                                   height: 100%;
+                                   /* object-fit: fill;  позволяет объекту полностью заполнить содержимое родителя, используя свои размеры */
+                                   /* object-fit: contain; заставляет объект полностью поместиться внутрь родителя */
+                                   /* object-fit: none; вписываются в размер родителя, масштабируюсь так, чтобы показать как можно больше */
+                                   object-fit: cover;
+                                   /* заставляет объект полностью поместиться внутрь не меняя размеры */
+                                   position: absolute;
+                                   top: 0;
+                                   left: 0;
+                              }
+
+                              @media (max-width: 480px) {
+                                   .cards__column {
+                                        flex: 0 1 100%;
+                                   }
+
+                                   .cards__row {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+                                        gap: 20px;
+                                   }
+                              }
+                         </style>
+
+                         <hr class="hr-yellow">
+                         <!-- В карточках (в ряд) -->
+                         <br>
+                         <h4 class="page__subtitle">Пример 2. Три ряда с разными по размеру картинками</h4>
+                         <section class="section section-items">
+                              <div class="items__item">
+                                   <div class="items__image">
+                                        <img src="../assets/img/1300x400.jpg" alt="">
+                                   </div>
+                                   <div class="items__body">
+                                        <div class="items__label">Заголовок</div>
+                                        <div class="items__text">Lorem ipsum dolor sit amet, consectetur
+                                             adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi
+                                             quaerat voluptatem magni perferendis sequi distinctio veritatis,
+                                             accusantium, unde modi repellendus nostrum ut fuga.</div>
+                                   </div>
+                              </div>
+                              <div class="items__item">
+                                   <div class="items__image">
+                                        <img src="../assets/img/400x600.jpg" alt="">
+                                   </div>
+                                   <div class="items__body">
+                                        <div class="items__label">Заголовок</div>
+                                        <div class="items__text">
+                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+                                             quam tempore ea animi quo nemo quasi quaerat voluptatem magni
+                                             perferendis sequi distinctio veritatis, accusantium, unde modi
+                                             repellendus nostrum ut fuga.
+                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+                                             quam tempore ea animi quo nemo quasi quaerat voluptatem magni
+                                             perferendis sequi distinctio veritatis, accusantium, unde modi
+                                             repellendus nostrum ut fuga.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="items__item">
+                                   <div class="items__image">
+                                        <img src="../assets/img/800x400.jpg" alt="">
+                                   </div>
+                                   <div class="items__body">
+                                        <div class="items__label">Заголовок</div>
+                                        <div class="items__text">Lorem ipsum dolor sit amet, consectetur
+                                             adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi
+                                             quaerat voluptatem magni perferendis sequi distinctio veritatis,
+                                             accusantium, unde modi repellendus nostrum ut fuga.</div>
+                                   </div>
+                              </div>
+                         </section>
+
+                         <!-- code example 2 -->
+                         <div class="section section-code">
+                              <div style="flex: 1 1 30%;" class="code-wrapper">
+                                   <h5 class="language">HTML – Пример 2</h5>
+                                   <div class="code-example">
+                                        <pre>
+        <code id="btn-code-4">&lt;div class="items__item"&gt;
+     &lt;div class="items__image"&gt;
+          &lt;img src="../assets/img/1300x400.jpg" alt=""&gt;
+     &lt;/div&gt;
+     &lt;div class="items__body"&gt;
+          &lt;div class="items__label"&gt;Заголовок&lt;/div&gt;
+          &lt;div class="items__text"&gt;
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni 
+               perferendis sequi distinctio veritatis, accusantium, unde modi repellendus 
+               nostrum ut fuga.
+          &lt;/div&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="items__item"&gt;
+     &lt;div class="items__image"&gt;
+          &lt;img src="../assets/img/400x600.jpg" alt=""&gt;
+     &lt;/div&gt;
+     &lt;div class="items__body"&gt;
+          &lt;div class="items__label"&gt;Заголовок&lt;/div&gt;
+          &lt;div class="items__text"&gt;
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam 
+               tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis 
+               sequi distinctio veritatis, accusantium, unde modi repellendus nostrum 
+               ut fuga. 
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente 
+               quam tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis 
+               sequi distinctio veritatis, accusantium, unde modi repellendus nostrum 
+               ut fuga.
+          &lt;/div&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="items__item"&gt;
+     &lt;div class="items__image"&gt;
+          &lt;img src="../assets/img/800x400.jpg" alt=""&gt;
+     &lt;/div&gt;
+     &lt;div class="items__body"&gt;
+          &lt;div class="items__label"&gt;Заголовок&lt;/div&gt;
+          &lt;div class="items__text"&gt;
+               Lorem ipsum dolor sit amet, consectetur adipisicing 
+               elit. Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni 
+               perferendis sequi distinctio veritatis, accusantium, unde modi repellendus 
+               nostrum ut fuga.
+          &lt;/div&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+     </pre>
+                                        <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-4"
+                                             src="../assets/svg/copy.svg" alt="copy">
+                                   </div>
+                              </div>
+                              <div style="flex: 1 1 0%;" class="code-wrapper">
+                                   <h5 class="language">CSS – Пример 2</h5>
+                                   <div class="code-example">
+                                        <pre>
+     <code id="btn-code-5">/* Контейнер ряда */
+.items__item {
+     display: flex;
+     margin: 0px 0px 30px 0px;
+}
+
+/* контейнер картинки */
+.items__image {
+     flex: 0 0 33.333%;
+     position: relative;
+     min-height: 150px; /* мин высота картинки */
+}
+
+/* картинка */
+     .items__image img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     top: 0;
+     left: 0;
+}
+
+.items__body {
+     flex: 1 1 auto;
+     padding: 0px 0px 0px 30px;
+}
+
+.items__label {
+     font-size: 20px;
+     font-weight: 700;
+     display: inline-block;
+     padding: 5px 0px 10px;
+}
+
+/* Медиа запросы */
+@media (max-width: 480px) {
+     .items__item {
+          flex-wrap: wrap;
+     }
+
+     .items__image {
+          flex: 0 0 100%;
+          position: relative;
+          min-height: 150px;
+     }
+
+     .items__body {
+          flex: 1 1 auto;
+          padding: 0;
+     }
+
+     .items__label {
+          display: block;
+          text-align: center;
+          padding: 5px 0px 10px;
+     }
+}
+     </code>
+</pre>
+                                        <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-5"
+                                             src="../assets/svg/copy.svg" alt="copy">
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /code -->
+
+                         <style>
+                              /* Контейнер ряда */
+                              .items__item {
+                                   display: flex;
+                                   margin: 0px 0px 30px 0px;
+                              }
+
+                              /* контейнер картинки */
+                              .items__image {
+                                   flex: 0 0 33.333%;
+                                   position: relative;
+                                   min-height: 150px;
+                                   /* мин высота картинки */
+                              }
+
+                              /* картинка */
+                              .items__image img {
+                                   width: 100%;
+                                   height: 100%;
+                                   object-fit: cover;
+                                   position: absolute;
+                                   top: 0;
+                                   left: 0;
+                              }
+
+                              .items__body {
+                                   flex: 1 1 auto;
+                                   padding: 0px 0px 0px 30px;
+                              }
+
+                              .items__label {
+                                   font-size: 20px;
+                                   font-weight: 700;
+                                   display: inline-block;
+                                   padding: 5px 0px 10px;
+                              }
+
+                              @media (max-width: 480px) {
+                                   .items__item {
+                                        flex-wrap: wrap;
+                                   }
+
+                                   .items__image {
+                                        flex: 0 0 100%;
+                                        position: relative;
+                                        min-height: 150px;
+                                   }
+
+                                   .items__body {
+                                        flex: 1 1 auto;
+                                        padding: 0;
+                                   }
+
+                                   .items__label {
+                                        display: block;
+                                        text-align: center;
+                                        padding: 5px 0px 10px;
+                                   }
+                              }
+                         </style>
+
+                    </div>
+               </div>
+          </main>
+
+          <footer class="footer">
+               <div class="container">
+                    <div class="footer-data">
+                         <div class="github">
+                              <a class="github-link" href="https://github.com/alexshev7" target="_blank">
+                                   <img class="github__icon" src="../assets/svg/github.svg" alt="github">
+                              </a>
+                         </div>
+                         <div class="copyright">
+                              <span class="copyright__item">© 2022 by Alexander Shevelev</span>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+
+     </div>
+
+     <script src="../assets/js/main.js"></script>
+     <script src="../assets/js/clipboard.min.js"></script>
+     <script src="../assets/js/highlight.min.js"></script>
+     <script src="../assets/js/highlightjs-line-numbers.min.js"></script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

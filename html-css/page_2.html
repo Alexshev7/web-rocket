@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../assets/css/style.css">
+     <title>Прижать футер</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="../assets/css/atom-one-light.min.css">
+</head>
+
+<body>
+
+     <div class="wrapper">
+          <header class="header">
+               <div class="container header__container">
+                    <a href="../index.html" class="header__logo">
+                         <img class="rocket__logo" src="../assets/svg/rocket_logo.svg" alt="logo">
+                         <div class="logo__titles">
+                              <h1 class="logo__title">Web-Rocket</h1>
+                              <h2 class="logo__subtitle">by Alexshev</h2>
+                         </div>
+                    </a>
+                    <div class="header__menu menu">
+                         <div class="menu__icon">
+                              <span></span>
+                         </div>
+                         <div class="underlay__menu"></div>
+                         <nav class="menu__body">
+                              <a href="#" class="burger__logo">
+                                   <h1 class="logo__title">Web-Rocket</h1>
+                                   <h2 class="logo__subtitle">by Alexshev</h2>
+                              </a>
+                              <ul class="menu__list">
+                                   <li class="menu__item"><a href="../index.html" class="menu__link">Главная</a></li>
+                                   <li class="menu__item"><a href="../materials.html" class="menu__link">Полезности</a>
+                                   </li>
+                                   <li class="menu__item"><a href="../faq.html" class="menu__link">FAQ</a></li>
+                              </ul>
+                         </nav>
+                    </div>
+               </div>
+          </header>
+
+          <main class="main">
+               <div class="section section-content">
+                    <div class="container">
+                         <h2 class="page__title">Прижатие футера</h2>
+                         <ul class="breadcrumbs">
+                              <li><a href="../index.html">Главная</a></li>
+                              <li><a href="page_2.html" class="link-disabled">Страница 2</a></li>
+                         </ul>
+
+                         <div class="panel-navigation">
+                              <a href="../index.html" class="btn">На главную</a>
+                         </div>
+                         <h3 class="page__title">Методы прижатия футера</h3>
+                         <hr class="hr-yellow">
+                         <h4 class="page__subtitle">1. Flexbox
+                              <a class="demo-link" href="../html-css/page_2-1_demo.html" target="_blank">
+                                   {Смотреть Демо}
+                              </a>
+                         </h4>
+                         <!-- code example 1 -->
+                         <div class="section-code">
+                              <div class="code-wrapper">
+                                   <h5 class="language">HTML – Пример 1</h5>
+                                   <div class="code-example">
+                                        <pre>
+      <code id="btn-code-1" class="html">&lt;div class="wrapper"&gt;
+     &lt;header class="header"&gt;
+
+     &lt;/header&gt;
+
+     &lt;main class="main"&gt;
+
+     &lt;/main&gt;
+
+     &lt;footer class="footer"&gt;
+
+     &lt;/footer&gt;
+&lt;/div&gt;
+      </code>
+   </pre>
+                                        <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-1"
+                                             src="../assets/svg/copy.svg" alt="copy">
+                                   </div>
+                              </div>
+
+                              <div class="code-wrapper">
+                                   <h5 class="language">CSS – Пример 1</h5>
+                                   <div class="code-example">
+                                        <pre>
+     <code id="btn-code-2">/* Стили для прижатия */
+html,
+body {
+     height: 100%;
+}
+
+.wrapper {
+     min-height: 100%;
+     display: flex;
+     flex-direction: column;
+}
+
+.main {
+     flex: 1 1 auto;
+}
+     </code>
+</pre>
+                                        <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-2"
+                                             src="../assets/svg/copy.svg" alt="copy">
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /code -->
+
+                         <h4 class="page__subtitle">2. Функция calc();
+                              <a class="demo-link" href="../html-css/page_2-2_demo.html" target="_blank">
+                                   {Смотреть Демо}
+                              </a>
+                         </h4>
+                         <!-- code example 2 -->
+                         <div class="section-code">
+                              <div class="code-wrapper">
+                                   <h5 class="language">HTML – Пример 2</h5>
+                                   <div class="code-example">
+                                        <pre>
+      <code id="btn-code-3" class="html">&lt;div class="content"&gt;
+     &lt;p&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;footer class="footer"&gt;
+
+&lt;/footer&gt;
+      </code>
+   </pre>
+                                        <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-3"
+                                             src="../assets/svg/copy.svg" alt="copy">
+                                   </div>
+                              </div>
+
+                              <div class="code-wrapper">
+                                   <h5 class="language">CSS – Пример 2</h5>
+                                   <div class="code-example">
+                                        <pre>
+     <code id="btn-code-4">/* Стили для прижатия */
+.content {
+     min-height: calc(100vh - 150px);
+}
+
+.footer {
+     background-color: #775f8d;
+     height: 100px;
+     margin-top: 50px;
+}
+     </code>
+</pre>
+                                        <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-4"
+                                             src="../assets/svg/copy.svg" alt="copy">
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /code -->
+                    </div>
+               </div>
+          </main>
+
+          <footer class="footer">
+               <div class="container">
+                    <div class="footer-data">
+                         <div class="github">
+                              <a class="github-link" href="https://github.com/alexshev7" target="_blank">
+                                   <img class="github__icon" src="../assets/svg/github.svg" alt="github">
+                              </a>
+                         </div>
+                         <div class="copyright">
+                              <span class="copyright__item">© 2022 by Alexander Shevelev</span>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+
+     </div>
+
+     <style>
+          .method-wrapper {
+               display: flex;
+               justify-content: space-between;
+               flex-wrap: wrap;
+          }
+
+          @media (max-width: 768px) {
+               .code-wrapper {
+                    width: 100%;
+               }
+
+          }
+     </style>
+
+
+     <script src="../assets/js/main.js"></script>
+     <script src="../assets/js/clipboard.min.js"></script>
+     <script src="../assets/js/highlight.min.js"></script>
+     <script src="../assets/js/highlightjs-line-numbers.min.js"></script>
+
+
+</body>
+
+</html>

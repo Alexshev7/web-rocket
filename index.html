@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <title>Главная</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/atom-one-light.min.css">
+</head>
+
+<body>
+     <div class="wrapper">
+          <header class="header">
+               <div class="container header__container">
+                    <a href="index.html" class="header__logo">
+                         <img class="rocket__logo" src="assets/svg/rocket_logo.svg" alt="logo">
+                         <div class="logo__titles">
+                              <h1 class="logo__title">Web-Rocket</h1>
+                              <h2 class="logo__subtitle">by Alexshev</h2>
+                         </div>
+                    </a>
+                    <div class="header__menu menu">
+                         <div class="menu__icon">
+                              <span></span>
+                         </div>
+                         <div class="underlay__menu"></div>
+                         <nav class="menu__body">
+                              <a href="#" class="burger__logo">
+                                   <h1 class="logo__title">Web-Rocket</h1>
+                                   <h2 class="logo__subtitle">by Alexshev</h2>
+                              </a>
+                              <ul class="menu__list">
+                                   <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+                                   <li class="menu__item"><a href="materials.html" class="menu__link">Полезности</a>
+                                   </li>
+                                   <li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+                              </ul>
+                         </nav>
+                    </div>
+               </div>
+          </header>
+
+          <main class="main">
+               <div class="section section-tabs">
+                    <div class="container tabs__container">
+                         <h2 class="main__title">Популярные разделы</h2>
+                         <!-- Навигация табов -->
+                         <div class="tabs">
+                              <div class="tabs__nav">
+                                   <button class="tabs__nav-btn active" type="button" data-tab="#tab_1">
+                                        <div class="tabs__title-content">
+                                             <img class="web__icon" src="assets/svg/web.svg" alt="web">
+                                             <span>Web-основы</span>
+                                        </div>
+                                   </button>
+                                   <button class="tabs__nav-btn video" type="button" data-tab="#tab_2">
+                                        <div class="tabs__title-content">
+                                             <img class="picture__icon" src="assets/svg/picture.svg" alt="picture">
+                                             <span>Изображения</span>
+                                        </div>
+                                   </button>
+                                   <button class="tabs__nav-btn" type="button" data-tab="#tab_3">
+                                        <div class="tabs__title-content">
+                                             <img class="form__icon" src="assets/svg/video.svg" alt="forms">
+                                             <span>Видео</span>
+                                        </div>
+                                   </button>
+                                   <button class="tabs__nav-btn" type="button" data-tab="#tab_4">
+                                        <div class="tabs__title-content">
+                                             <img class="files__icon" src="assets/svg/javascript.svg" alt="javascript">
+                                             <span>JavaScript</span>
+                                        </div>
+                                   </button>
+                              </div>
+                              <div class="tabs__content">
+                                   <!-- Меню HTML/CSS -->
+                                   <div class="tabs__item active" id="tab_1">
+                                        <div class="section section-tabs">
+                                             <div class="container container__tabs">
+                                                  <h1 class="tab-list__title">HTML/CSS</h1>
+                                                  <ul class="tab-list">
+                                                       <li class="tab-list__item">
+                                                            <a href="html-css/page_1.html">
+                                                                 <span class="text">HTML - теги</span>
+                                                                 <span class="page">1</span>
+                                                            </a>
+                                                       </li>
+                                                       <li class="tab-list__item">
+                                                            <a href="html-css/page_2.html">
+                                                                 <span class="text">Прижать футер</span>
+                                                                 <span class="page">2</span>
+                                                            </a>
+                                                       </li>
+                                                       <li class="tab-list__item">
+                                                            <a href="html-css/page_3.html">
+                                                                 <span class="text">Тест декодера</span>
+                                                                 <span class="page">3</span>
+                                                            </a>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <!-- Меню изображения -->
+                                   <div class="tabs__item" id="tab_2">
+                                        <div class="section section-tabs">
+                                             <div class="container container__tabs">
+                                                  <h2 class="tab-list__title">Работа с изображениями</h2>
+                                                  <ul class="tab-list">
+                                                       <li class="tab-list__item">
+                                                            <a href="pictures/page_1.html">
+                                                                 <span class="text">Адаптивность</span>
+                                                                 <span class="page">1</span>
+                                                            </a>
+                                                       </li>
+                                                       <li class="tab-list__item">
+                                                            <a href="pictures/page_2.html">
+                                                                 <span class="text">Примеры картинок в колонках, рядах с
+                                                                      текстом</span>
+                                                                 <span class="page">2</span>
+                                                            </a>
+                                                       </li>
+                                                       <li class="tab-list__item">
+                                                            <a href="pictures/page_3.html">
+                                                                 <span class="text">Раздел 3</span>
+                                                                 <span class="page">3</span>
+                                                            </a>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <!-- Меню видео -->
+                                   <div class="tabs__item" id="tab_3">
+                                        <div class="section section-tabs">
+                                             <div class="container container__tabs">
+                                                  <h2 class="tab-list__title">Видео</h2>
+                                                  <ul class="tab-list">
+                                                       <li class="tab-list__item">
+                                                            <a href="video/page_1.html">
+                                                                 <span class="text">Настройка VS code</span>
+                                                                 <span class="page">1</span>
+                                                            </a>
+                                                       </li>
+                                                       <li class="tab-list__item">
+                                                            <a href="video/page_2.html">
+                                                                 <span class="text">Раздел 2</span>
+                                                                 <span class="page">2</span>
+                                                            </a>
+                                                       </li>
+                                                       <li class="tab-list__item">
+                                                            <a href="video/page_3.html">
+                                                                 <span class="text">Раздел 3</span>
+                                                                 <span class="page">3</span>
+                                                            </a>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <!-- Менб JavaScript -->
+                                   <div class="tabs__item" id="tab_4">
+                                        <div class="section section-tabs">
+                                             <div class="container container__tabs">
+                                                  <h1 class="tab-list__title">JavaScript</h1>
+                                                  <ul class="tab-list">
+                                                       <li class="tab-list__item">
+                                                            <a href="javascript/page_1.html">
+                                                                 <span class="text">Операторы</span>
+                                                                 <span class="page">1</span>
+                                                            </a>
+                                                       </li>
+                                                       <li class="tab-list__item">
+                                                            <a href="javascript/page_2.html">
+                                                                 <span class="text">Функции</span>
+                                                                 <span class="page">2</span>
+                                                            </a>
+                                                       </li>
+                                                       <li class="tab-list__item">
+                                                            <a href="javascript/page_3.html">
+                                                                 <span class="text">Рабочие примеры</span>
+                                                                 <span class="page">3</span>
+                                                            </a>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="section section-decoder">
+                    <div class="container container__decoder">
+                         <div class="decoder-wrapper">
+                              <div class="decoder-form">
+                                   <fieldset class="decoder" style="width: 100%;border: none;">
+                                        <div class="decoder__item">
+                                             <label for="">HTML</label>
+                                             <textarea class="contacts-form__item contacts-form-textarea"
+                                                  id="html-decode" rows="2" placeholder="html код"></textarea>
+
+                                             <label for="">HTML encode</label>
+                                             <textarea class="contacts-form__item contacts-form-textarea" cols="60"
+                                                  id="html-encoded" rows="2" placeholder="Результат"></textarea>
+                                        </div>
+                                        <button class="decoder__item btn btn-decoder"
+                                             onclick="encode()">Закодировать</button>
+                                   </fieldset>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <style>
+                    .decoder-wrapper {
+                         display: flex;
+                         justify-content: center;
+                    }
+
+                    .decoder {
+                         display: flex;
+                         flex-direction: column;
+                         align-self: center;
+                    }
+
+                    .decoder__item {
+                         max-width: 760px;
+                    }
+
+                    .btn-decoder {
+                         align-self: flex-start;
+                    }
+
+                    textarea {
+                         width: 100%;
+                         min-height: 300px;
+                         font-family: 'Roboto', sans-serif;
+                         font-style: normal;
+                         font-weight: normal;
+                         font-size: 14px;
+                         padding: 10px;
+                         color: var(--gold);
+                    }
+
+                    .contacts-form__item {
+                         border: 2px solid var(--gold);
+                         background: rgba(0, 0, 0, 0.5);
+                    }
+
+                    .contacts-form-textarea {
+                         padding: 15px 15px;
+                    }
+
+                    #html,
+                    #message {
+                         resize: none;
+                    }
+
+                    .contacts-form__item {
+                         -webkit-transition: all 0.3s ease;
+                         -moz--transition: all 0.3s ease;
+                         transition: all 0.3s ease;
+                    }
+
+                    .contacts-form__item:hover {
+                         cursor: pointer;
+                    }
+
+                    .contacts-form__item:focus {
+                         outline: none;
+                         box-shadow: 0px 0px 5px 3px rgb(236 232 157);
+                         -webkit-box-shadow: 0px 0px 5px 3px rgb(236 232 157);
+                         -moz-box-shadow: 0px 0px 5px 3px rgb(236 232 157);
+                         -webkit-transition: all 0.3s ease;
+                         -moz--transition: all 0.3s ease;
+                         transition: all 0.3s ease;
+                         cursor: text;
+                    }
+               </style>
+               <script>
+                    function encode() {
+                         document.getElementById('html-encoded').value = htmlEntities(document.getElementById('html-decode').value);
+                    }
+
+                    function htmlEntities(str) {
+                         return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+                    }
+               </script>
+          </main>
+
+          <footer class="footer">
+               <div class="container">
+                    <div class="footer-data">
+                         <div class="github">
+                              <a class="github-link" href="https://github.com/alexshev7" target="_blank">
+                                   <img class="github__icon" src="assets/svg/github.svg" alt="github">
+                              </a>
+                         </div>
+                         <div class="copyright">
+                              <span class="copyright__item">© 2022 by Alexander Shevelev</span>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+
+     </div>
+
+     <script src="assets/js/main.js"></script>
+     <script src="assets/js/clipboard.min.js"></script>
+     <script src="assets/js/highlight.min.js"></script>
+     <script src="assets/js/highlightjs-line-numbers.min.js"></script>
+
+</body>
+
+</html>
