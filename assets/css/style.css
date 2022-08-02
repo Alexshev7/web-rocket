@@ -6,24 +6,30 @@
      --a-color: #ffffff;
      --a-active: #ece89d;
      --a-hover: #ece89d;
+     --main-title-color: #ffffff;
      --page-title-color: #ece89d;
      --page-subtitle-color: #ffffff;
+
      /* Шапка */
      --header-title: #ece89d;
      --header-subtitle: #ffffff;
+
      /* Бургер меню */
      --burger-menu-bg: #32b5a5;
      --burger-line-color: #ece89d;
+
      /* Табы */
      --tab-title-bg: #5e5373;
      --tab-body-bg: #5e5373;
      --tab-color: #ffffff;
+
      /* content */
      --page-number-color: #ece89d;
      --btn-back-bg: #5e5373;
      --btn-back-brd-clr: #ece89d;
      --btn-back-color: #ffffff;
-     /* Не задействованы */
+
+     /*  */
 
 }
 
@@ -96,7 +102,7 @@ a {
 .main__title {
      font-size: 28px;
      text-align: center;
-     color: var(--page-subtitle-color);
+     color: var(--main-title-color);
      padding: 20px 0px;
 }
 
@@ -112,7 +118,7 @@ h3.page__title {
      padding: 5px 0px;
 }
 
-h4.page__subtitle {
+h4.page__title {
      font-size: 20px;
      padding: 20px 0px 10px 0px;
 }
@@ -237,6 +243,59 @@ h4.page__subtitle {
 }
 
 /* section-tabs */
+.container__tabs {
+     max-width: 1024px;
+}
+
+ul.tab-list {
+     list-style-type: none;
+     padding: 20px;
+     border-radius: 5px;
+     color: var(--tab-color);
+     background-color: var(--oglav-bg);
+     box-shadow: #ece89d 0px 0px 0px 3px;
+     box-shadow: none !important;
+     height: 162px;
+     overflow: auto;
+}
+
+ul.tab-list li {
+     border-bottom: 1px dotted #C2C2C2;
+     position: relative;
+     padding: 0;
+     margin-bottom: 10px;
+}
+
+ul.tab-list span {
+     background-color: var(--tab-body-bg);
+     margin: 0;
+}
+
+ul.tab-list li span.text,
+ul.tab-list li span.page {
+     bottom: -5px;
+}
+
+ul.tab-list span.text {
+     position: relative;
+     margin-right: 7em;
+     padding-right: 2px;
+}
+
+ul.tab-list span.page {
+     position: absolute;
+     right: 0;
+     padding-left: 2px;
+}
+
+.tab-list__item {
+     display: flex;
+}
+
+.tab-list__item a:hover {
+     color: #ece89d;
+}
+
 .tabs__container {
      max-width: 1024px;
      margin: 0 auto;
@@ -310,10 +369,6 @@ h4.page__subtitle {
      height: 35px;
 }
 
-ul.tab-list {
-     box-shadow: none !important;
-}
-
 /* section-code */
 .section-code {
      display: flex;
@@ -385,6 +440,10 @@ code {
      line-height: 1.5;
 }
 
+.hljs-ln-n:before {
+     color: #999999;
+}
+
 .block-example__horizontal {
      display: flex;
      flex-wrap: wrap;
@@ -416,33 +475,31 @@ code {
      opacity: 1;
 }
 
-/* page content */
+/* section-content */
+.p-text {
+     margin: 10px 0px;
+}
+
+
 .breadcrumbs {
      display: block;
      margin: 0;
      padding: 0;
-     /* Убираем отступы */
 }
 
 .breadcrumbs li {
      display: inline-block;
-     /* Выстраиваем по горизонтали */
 }
 
 .breadcrumbs li::before {
      content: '/';
-     /* Разделитель */
      margin-left: 5px;
-     /* Отступ слева */
      margin-right: 5px;
-     /* Отступ справа */
      color: #5e5373;
-     /* Цвет разделителя */
 }
 
 .breadcrumbs li:first-child::before {
      content: '';
-     /* Убираем разделитель для первого пункта */
 }
 
 .breadcrumbs__link active {
@@ -469,7 +526,6 @@ code {
      padding: 10px 25px;
      outline: none;
      user-select: none;
-     /* align-self: flex-end; */
 }
 
 .btn:hover {
@@ -486,65 +542,12 @@ h4.chapter__subtitle {
      padding: 20px 0px 10px 0px;
 }
 
-
 .hr-yellow {
      height: 3px;
      border: none;
      color: #333;
      background-color: #ece89d;
      /* margin: 15px 0px; */
-}
-
-
-/* tab-list */
-.container__tabs {
-     max-width: 1024px;
-}
-
-ul.tab-list {
-     list-style-type: none;
-     padding: 20px;
-     border-radius: 5px;
-     color: var(--tab-color);
-     background-color: var(--oglav-bg);
-     box-shadow: #ece89d 0px 0px 0px 3px;
-}
-
-ul.tab-list li {
-     border-bottom: 1px dotted #C2C2C2;
-     position: relative;
-     padding: 0;
-     margin-bottom: 10px;
-}
-
-ul.tab-list span {
-     background-color: var(--tab-body-bg);
-     margin: 0;
-}
-
-ul.tab-list li span.text,
-ul.tab-list li span.page {
-     bottom: -5px;
-}
-
-ul.tab-list span.text {
-     position: relative;
-     margin-right: 7em;
-     padding-right: 2px;
-}
-
-ul.tab-list span.page {
-     position: absolute;
-     right: 0;
-     padding-left: 2px;
-}
-
-.tab-list__item {
-     display: flex;
-}
-
-.tab-list__item a:hover {
-     color: #ece89d;
 }
 
 /* main table */
@@ -589,7 +592,7 @@ ul.tab-list span.page {
 .encoder__item {
      display: flex;
      flex-direction: column;
-     gap: 20px;
+     gap: 10px;
 }
 
 .btn-encoder {
@@ -644,7 +647,7 @@ textarea::-webkit-scrollbar {
 }
 
 label {
-     font-size: 15px;
+     font-size: 18px;
 }
 
 /* footer */

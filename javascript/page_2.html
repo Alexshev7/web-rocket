@@ -6,7 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../assets/css/style.css">
-     <title>Заголовок страницы</title>
+     <title>Область видимости JS</title>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -48,23 +48,93 @@
           </header>
 
           <main class="main">
-               <div class="section section-content">
-                    <div class="container">
-                         <h2 class="page__title">Шаблон</h2>
-                         <ul class="breadcrumbs">
-                              <li><a href="../index.html">Главная</a></li>
-                              <li><a href="page_1.html" class="link-disabled">Страница 1</a></li>
-                         </ul>
+               <div class="container">
+                    <h2 class="page__title">Область видимости</h2>
+                    <ul class="breadcrumbs">
+                         <li><a href="../index.html">Главная</a></li>
+                         <li><a href="page_1.html" class="link-disabled">Страница 2</a></li>
+                    </ul>
 
-                         <div class="panel-navigation">
-                              <a href="../index.html" class="btn">На главную</a>
-                         </div>
-                         <h3 class="page__title">Заголовок</h3>
-                         <hr class="hr-yellow">
-                         <h4 class="page__subtitle">Подзаголовок</h4>
-
+                    <div class="panel-navigation">
+                         <a href="../index.html" class="btn">На главную</a>
                     </div>
+                    <h3 class="page__title">Примеры</h3>
+                    <hr class="hr-yellow">
                </div>
+
+               <section class="section section-content">
+                    <div class="container">
+                         <div class="content-wrapper">
+
+                              <p class="p-text">Пример 1 – переменная, объявленная через let или var внутри функции, не
+                                   видна за её
+                                   пределами.</p>
+                              <!-- code example 1 -->
+                              <section class="section-code">
+                                   <div class="code-wrapper">
+                                        <h5 class="language">JavaScript</h5>
+                                        <div class="code-example">
+                                             <pre>
+          <code id="btn-code-1" class="js">// через let
+function testBlock() {
+     let myAge = 28;
+     console.log(myAge); // Работает!  28
+ }
+
+testBlock(); // вызов функции
+console.log(myAge); // Будет ошибка, т.к. переменная не видна за пределами бока
+
+---------
+
+// через var
+function testBlock() {
+     var myAge = 28;
+     console.log(myAge); // Работает!  28
+}
+testBlock(); // вызов функции
+console.log(myAge); // Будет ошибка, т.к. переменная не видна за пределами бока
+          </code>
+      </pre>
+                                             <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-1"
+                                                  src="../assets/svg/copy.svg" alt="copy">
+
+                                        </div>
+                                   </div>
+                                   <!-- /code -->
+                              </section><br>
+
+                              <p class="p-text">Пример 2 – переменные, объявленные внутри функции и за её пределами с
+                                   одним и тем же именем - это 2 разные переменные</p>
+                              <!-- code example 2 -->
+                              <section class="section-code">
+                                   <div class="code-wrapper">
+                                        <h5 class="language">JavaScript</h5>
+                                        <div class="code-example">
+                                             <pre>
+          <code id="btn-code-2" class="js">let myAge = 36;
+
+function testBlock() {
+     let myAge = 28;
+     console.log(myAge); // выведет 28
+}
+     
+testBlock(); // вызов функции
+
+console.log(myAge); // выведет 36
+          </code>
+      </pre>
+                                             <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-2"
+                                                  src="../assets/svg/copy.svg" alt="copy">
+
+                                        </div>
+                                   </div>
+                                   <!-- /code -->
+                              </section>
+
+                         </div>
+               </section>
+
+
           </main>
 
           <footer class="footer">
