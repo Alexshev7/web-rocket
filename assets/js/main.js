@@ -113,5 +113,3 @@ for (let textarea of textareas) {
 }
 
 
-
-

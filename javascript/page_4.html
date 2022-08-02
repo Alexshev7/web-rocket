@@ -6,7 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../assets/css/style.css">
-     <title>Преобразование типов данных</title>
+     <title>События JavaScript</title>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -49,10 +49,10 @@
 
           <main class="main">
                <div class="container">
-                    <h2 class="page__title">Преобразование типов данных</h2>
+                    <h2 class="page__title">События JavaScript</h2>
                     <ul class="breadcrumbs">
                          <li><a href="../index.html">Главная</a></li>
-                         <li><a href="page_1.html" class="link-disabled">Страница 3</a></li>
+                         <li><a href="page_1.html" class="link-disabled">Страница 4</a></li>
                     </ul>
 
                     <div class="panel-navigation">
@@ -66,21 +66,47 @@
                     <div class="container">
                          <div class="content-wrapper">
 
-                              <p class="p-text">Пример 1 – переменная, объявленная через <span
-                                        class="variable">let</span> или <span class="variable">var</span> внутри
-                                   функции, не видна за её пределами.</p>
+                              <p class="p-text">Пример 1 – Оповещение по кнопке</p>
+                              <button class="btn btn-test-1" type="button" onclick="alert('Результат')">Нажми</button>
+                              <br><br>
                               <!-- code example 1 -->
                               <section class="section-code">
                                    <div class="code-wrapper">
                                         <h5 class="language">JavaScript</h5>
                                         <div class="code-example">
                                              <pre>
-          <code id="btn-code-1" class="js">let userAge = 38;
-userAge = String(userAge);
-console.log(typeof (userAge)); // string
-          </code>
+<code id="btn-code-1"> // Событие по клику на кнопку
+&lt;button class=&quot;btn&quot; type=&quot;button&quot; onclick=&quot;alert('Результат')&quot;&gt; Нажми &lt;/button&gt;
+     </code>
       </pre>
                                              <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-1"
+                                                  src="../assets/svg/copy.svg" alt="copy">
+
+                                        </div>
+                                   </div>
+                                   <!-- /code -->
+                              </section><br>
+
+                              <p class="p-text">Пример 2 – Оповещение по кнопке через JavaScript</p>
+                              <button class="btn btn-test-2" type="button">Нажми</button>
+                              <script>
+                                   const btn = document.querySelector(".btn-test-2");
+                                   btn.onclick = function () {
+                                        alert("Работает!");
+                                   }
+                              </script>
+                              <br><br>
+                              <!-- code example 2 -->
+                              <section class="section-code">
+                                   <div class="code-wrapper">
+                                        <h5 class="language">JavaScript</h5>
+                                        <div class="code-example">
+                                             <pre>
+<code id="btn-code-2"> // Событие по клику на кнопку
+&lt;button class=&quot;btn&quot; type=&quot;button&quot; onclick=&quot;alert('Результат')&quot;&gt; Нажми &lt;/button&gt;
+     </code>
+      </pre>
+                                             <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-2"
                                                   src="../assets/svg/copy.svg" alt="copy">
 
                                         </div>
@@ -110,14 +136,10 @@ console.log(typeof (userAge)); // string
 
      </div>
 
-
-
-
      <script src="../assets/js/main.js"></script>
      <script src="../assets/js/clipboard.min.js"></script>
      <script src="../assets/js/highlight.min.js"></script>
      <script src="../assets/js/highlightjs-line-numbers.min.js"></script>
-
 
 </body>
 
