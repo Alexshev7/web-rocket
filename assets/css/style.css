@@ -249,7 +249,7 @@ h4.page__title {
 
 ul.tab-list {
      list-style-type: none;
-     padding: 20px;
+     padding: 10px 20px 10px 20px;
      border-radius: 5px;
      color: var(--tab-color);
      background-color: var(--oglav-bg);
@@ -313,7 +313,7 @@ ul.tab-list span.page {
 .tab-list__title {
      text-align: center;
      font-size: 28px;
-     padding: 10px 0px 5px 0px;
+     padding: 10px 0px 10px 0px;
      color: var(--page-subtitle-color);
 }
 
@@ -386,7 +386,7 @@ ul.tab-list span.page {
      font-size: 16px;
      font-weight: normal;
      text-align: right;
-     padding: 10px;
+     padding: 5px;
      color: #ffffff;
      background-color: #5e5373;
 }
@@ -407,6 +407,7 @@ ul.tab-list span.page {
 
 pre {
      overflow: auto;
+     display: flex;
 }
 
 .hljs-ln-numbers {
@@ -532,6 +533,7 @@ span.variable {
      padding: 10px 25px;
      outline: none;
      user-select: none;
+     font-size: 16px;
 }
 
 .btn:hover {
