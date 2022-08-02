@@ -6,7 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../assets/css/style.css">
-     <title>HTML 3 страница</title>
+     <title>Сброс стилей CSS</title>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -50,7 +50,7 @@
           <main class="main">
                <div class="section section-content">
                     <div class="container">
-                         <h2 class="page__title">Шаблон</h2>
+                         <h2 class="page__title">Сброс стилей CSS</h2>
                          <ul class="breadcrumbs">
                               <li><a href="../index.html">Главная</a></li>
                               <li><a href="page_3.html" class="link-disabled">Страница 3</a></li>
@@ -59,31 +59,68 @@
                          <div class="panel-navigation">
                               <a href="../index.html" class="btn">На главную</a>
                          </div>
-                         <h3 class="page__title">Заголовок</h3>
+                         <h3 class="page__title">Базовый сброс стилей</h3>
                          <hr class="hr-yellow">
-                         <h4 class="page__subtitle">Подзаголовок</h4>
-
+                         <h4 class="page__title">Вариант 1</h4>
 
                          <!-- code example 1 -->
                          <div class="section-code">
                               <div class="code-wrapper">
-                                   <h5 class="language">HTML – Пример 1</h5>
+                                   <h5 class="language">CSS – Пример 1</h5>
                                    <div class="code-example">
                                         <pre>
-      <code id="btn-code-1" class="html">&lt;table class=&quot;table table-bordered table-striped&quot;&gt;
-     &lt;tbody&gt;
-          &lt;tr&gt;
-               &lt;td&gt;&lt;/td&gt;
-               &lt;td&gt;&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-               &lt;td&gt;&lt;/td&gt;
-               &lt;td&gt;&lt;/td&gt;
-          &lt;/tr&gt;
-     &lt;/tbody&gt;
-&lt;/table&gt;
-      </code>
-   </pre>
+     <code id="btn-code-1">/* variables */
+:root {
+     /* Общие */
+     --text-color: #ffffff;
+     --main-bg: #32b5a5;
+     --a-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+     padding: 0;
+     margin: 0;
+     border: 0;
+     box-sizing: border-box;
+}
+
+img {
+     vertical-align: top;
+}
+
+html,
+body {
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     line-height: 1.2;
+     color: var(--text-color);
+     background-color: var(--main-bg);
+     scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     font-weight: 400;
+     font-size: inherit;
+}
+
+a {
+     text-decoration: none;
+     color: var(--a-color);
+     /* Убирает синий mobile tap при нажатии */
+     -webkit-tap-highlight-color: transparent;
+}
+     </code>
+</pre>
                                         <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-1"
                                              src="../assets/svg/copy.svg" alt="copy">
                                    </div>
@@ -113,12 +150,10 @@
 
      </div>
 
-
      <script src="../assets/js/main.js"></script>
      <script src="../assets/js/clipboard.min.js"></script>
      <script src="../assets/js/highlight.min.js"></script>
      <script src="../assets/js/highlightjs-line-numbers.min.js"></script>
-
 
 </body>
 

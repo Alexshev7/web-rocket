@@ -48,7 +48,7 @@
           </header>
 
           <main class="main">
-               <div class="section section-content">
+               <section class="section section-content">
                     <div class="container">
                          <h2 class="page__title">Шаблон для разработки</h2>
                          <ul class="breadcrumbs">
@@ -61,7 +61,7 @@
                          </div>
                          <h3 class="page__title">Заготовки для разработки web-rocket</h3>
                          <hr class="hr-yellow">
-                         <h4 class="page__subtitle">Кнопки навигации, шифровщик HTML для вставки кода.</h4>
+                         <h4 class="page__title">Кнопки навигации, шифровщик HTML для вставки кода.</h4>
 
                          <div class="panel-navigation">
                               <!-- Кнопка назад -->
@@ -72,32 +72,26 @@
                               <a href="#" class="btn">Смотреть Демо</a>
                               <!--  -->
                          </div>
-                    </div>
 
-                    <!-- encoder -->
-                    <div class="section section-encoder">
-                         <div class="container">
-                              <div class="encoder-wrapper">
-                                   <div class="encoder">
-                                        <div class="encoder__item">
-                                             <label for="html-decoded">HTML decode</label>
-                                             <textarea class="encoder-form__item encoder-form-textarea"
-                                                  id="html-decoded" placeholder="html код"></textarea>
-
-
-                                             <label for="html-encoded">HTML encode</label>
-                                             <textarea class="encoder-form__item encoder-form-textarea"
-                                                  id="html-encoded" placeholder="Результат"></textarea>
-                                        </div>
-
-                                        <button class="encoder__item btn btn-encoder"
-                                             onclick="encode(); copy();">Encode</button>
+                         <!-- encoder -->
+                         <div class="encoder-wrapper">
+                              <div class="encoder">
+                                   <div class="encoder__item">
+                                        <label for="html-decoded">HTML decode</label>
+                                        <textarea class="encoder-form__item encoder-form-textarea" id="html-decoded"
+                                             placeholder="html код"></textarea>
                                    </div>
+                                   <div class="encoder__item">
+                                        <label for="html-encoded">HTML encode</label>
+                                        <textarea class="encoder-form__item encoder-form-textarea" id="html-encoded"
+                                             placeholder="Результат"></textarea>
+                                   </div>
+                                   <button class="encoder__item btn btn-encoder"
+                                        onclick="encode(); copy();">Encode</button>
                               </div>
                          </div>
                     </div>
-
-               </div>
+               </section>
           </main>
 
           <footer class="footer">
