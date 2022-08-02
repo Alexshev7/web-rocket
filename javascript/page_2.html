@@ -66,33 +66,32 @@
                     <div class="container">
                          <div class="content-wrapper">
 
-                              <p class="p-text">Пример 1 – переменная, объявленная через let или var внутри функции, не
-                                   видна за её
-                                   пределами.</p>
+                              <p class="p-text">Пример 1 – переменная, объявленная через <span
+                                        class="variable">let</span> или <span class="variable">var</span> внутри
+                                   функции, не видна за её пределами.</p>
                               <!-- code example 1 -->
                               <section class="section-code">
                                    <div class="code-wrapper">
                                         <h5 class="language">JavaScript</h5>
                                         <div class="code-example">
                                              <pre>
-          <code id="btn-code-1" class="js">// через let
+          <code id="btn-code-1" class="js">//--- let ---
 function testBlock() {
      let myAge = 28;
-     console.log(myAge); // Работает!  28
+     console.log(myAge); //  28
  }
 
 testBlock(); // вызов функции
-console.log(myAge); // Будет ошибка, т.к. переменная не видна за пределами бока
+console.log(myAge); // Будет ошибка, т.к. переменная не видна за пределами функции
 
----------
 
-// через var
+//--- var ---
 function testBlock() {
      var myAge = 28;
-     console.log(myAge); // Работает!  28
+     console.log(myAge); //   28
 }
 testBlock(); // вызов функции
-console.log(myAge); // Будет ошибка, т.к. переменная не видна за пределами бока
+console.log(myAge); // Будет ошибка, т.к. переменная не видна за пределами функции
           </code>
       </pre>
                                              <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-1"
@@ -115,12 +114,12 @@ console.log(myAge); // Будет ошибка, т.к. переменная не
 
 function testBlock() {
      let myAge = 28;
-     console.log(myAge); // выведет 28
+     console.log(myAge); //  28
 }
      
 testBlock(); // вызов функции
 
-console.log(myAge); // выведет 36
+console.log(myAge); //  36
           </code>
       </pre>
                                              <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-2"
@@ -129,12 +128,59 @@ console.log(myAge); // выведет 36
                                         </div>
                                    </div>
                                    <!-- /code -->
-                              </section>
+                              </section><br>
+
+                              <p class="p-text">Пример 3 – переменная, объявленная через <span
+                                        class="variable">let</span> в блоке с
+                                   условием НЕ БУДЕТ видна снаружи!</p>
+                              <!-- code example 3 -->
+                              <section class="section-code">
+                                   <div class="code-wrapper">
+                                        <h5 class="language">JavaScript</h5>
+                                        <div class="code-example">
+                                             <pre>
+               <code id="btn-code-3" class="js">if (true) {
+     let sizeVar = 50;
+}
+
+console.log(sizeVar); // Ошибка
+               </code>
+               </pre>
+                                             <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-3"
+                                                  src="../assets/svg/copy.svg" alt="copy">
+
+                                        </div>
+                                   </div>
+                                   <!-- /code -->
+                              </section><br>
+
+                              <p class="p-text">Пример 4 – переменная, объявленная через <span
+                                        class="variable">var</span> в блоке с
+                                   условием будет видна снаружи! Так же работает и с циклами</p>
+                              <!-- code example 4 -->
+                              <section class="section-code">
+                                   <div class="code-wrapper">
+                                        <h5 class="language">JavaScript</h5>
+                                        <div class="code-example">
+                                             <pre>
+               <code id="btn-code-4" class="js">if (true) {
+     var sizeVar = 50;
+}
+
+console.log(sizeVar); // 50
+               </code>
+               </pre>
+                                             <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-4"
+                                                  src="../assets/svg/copy.svg" alt="copy">
+
+                                        </div>
+                                   </div>
+                                   <!-- /code -->
+                              </section><br>
 
                          </div>
+                    </div>
                </section>
-
-
           </main>
 
           <footer class="footer">
