@@ -6,7 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../assets/css/style.css">
-     <title>События JavaScript</title>
+     <title>Date(); JavaScript</title>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -49,7 +49,7 @@
 
           <main class="main">
                <div class="container">
-                    <h2 class="page__title">События JavaScript</h2>
+                    <h2 class="page__title">Date(); в JavaScript</h2>
                     <ul class="breadcrumbs">
                          <li><a href="../index.html">Главная</a></li>
                          <li><a href="page_1.html" class="link-disabled">Страница 4</a></li>
@@ -66,19 +66,22 @@
                     <div class="container">
                          <div class="content-wrapper">
 
-                              <p class="p-text">Пример 1 – Оповещение по кнопке</p>
-                              <button class="btn btn-test-1" type="button" onclick="alert('Пример 1 работает!')">Пример
-                                   1</button>
-                              <br><br>
+                              <p class="p-text">Получить дату и время по москве</p>
                               <!-- code example 1 -->
                               <section class="section-code">
                                    <div class="code-wrapper">
                                         <h5 class="language">JavaScript</h5>
                                         <div class="code-example">
                                              <pre>
-<code id="btn-code-1"> // Событие по клику на кнопку
-&lt;button class=&quot;btn&quot; type=&quot;button&quot; onclick=&quot;alert('Пример 1 работает!')&quot;&gt; Кнопка &lt;/button&gt;
-     </code>
+          <code id="btn-code-1">// Получить полную дату
+let d = new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Moscow"}));
+
+//В миллисекундах с 1 января 1970 г. до Сегодняшнего дня
+let y = d.getTime();
+
+//В секундах прошедших с 1 января 1970 г. до Сегодняшнего дня
+const seconds = Math.floor(d.getTime() / 1000);
+          </code>
       </pre>
                                              <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-1"
                                                   src="../assets/svg/copy.svg" alt="copy">
@@ -87,33 +90,70 @@
                                    </div>
                                    <!-- /code -->
                               </section><br>
-
-                              <p class="p-text">Пример 2 – Оповещение по кнопке через JavaScript</p>
-                              <button class="btn btn-test-2" type="button">Пример 2</button>
+                              <button class="btn btn-test-1" type="button">Кнопка</button>
+                              <br><br>
                               <script>
-                                   const btn = document.querySelector(".btn-test-2");
-                                   btn.onclick = function () {
-                                        alert("Пример 2 работает!");
+                                   const btnOne = document.querySelector(".btn-test-1");
+                                   let d = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Moscow" }));
+                                   // в мс
+                                   let y = d.getTime();
+                                   // в секундах
+                                   const seconds = Math.floor(d.getTime() / 1000);
+                                   btnOne.onclick = function () {
+                                        alert('Результат: ' + d + "\n" + 'в миллисекундах: ' + y + "\n" + 'в секундах: ' + seconds);
                                    }
                               </script>
-                              <br><br>
-                              <!-- code example 2 -->
+
+                              <p class="p-text">Получить название текущего дня недели</p>
+                              <!-- code example 1 -->
                               <section class="section-code">
                                    <div class="code-wrapper">
                                         <h5 class="language">JavaScript</h5>
                                         <div class="code-example">
                                              <pre>
-<code id="btn-code-2"> // Событие по клику на кнопку
-&lt;button class=&quot;btn&quot; type=&quot;button&quot; onclick=&quot;alert('Пример 2 работает!')&quot;&gt; Кнопка &lt;/button&gt;
+     <code id="btn-code-2">var days = [
+'Воскресенье',
+'Понедельник',
+'Вторник',
+'Среда',
+'Четверг',
+'Пятница',
+'Суббота'
+];
+
+let d = new Date();
+let n = d.getDay();
+
+console.log(days[n]);
      </code>
-      </pre>
+</pre>
                                              <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-2"
                                                   src="../assets/svg/copy.svg" alt="copy">
-
                                         </div>
                                    </div>
                                    <!-- /code -->
                               </section><br>
+                              <button class="btn btn-test-2" type="button">Кнопка</button>
+                              <script>
+                                   const btnTwo = document.querySelector(".btn-test-2");
+
+                                   let days = [
+                                        'Воскресенье',
+                                        'Понедельник',
+                                        'Вторник',
+                                        'Среда',
+                                        'Четверг',
+                                        'Пятница',
+                                        'Суббота'
+                                   ];
+
+                                   let b = new Date();
+                                   let n = b.getDay();
+
+                                   btnTwo.onclick = function () {
+                                        alert('Результат: ' + days[n]);
+                                   }
+                              </script>
 
                          </div>
                     </div>
