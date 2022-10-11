@@ -60,10 +60,28 @@
                               <a href="../index.html" class="btn">На главную</a>
                          </div>
 
-                         <h3 class="page__title">Заголовок подтемы</h3>
+                         <h3 class="page__title">Абсолютное позиционирование</h3>
                          <hr class="hr-yellow">
-                         <h4 class="page__title">Подзаголовок статьи</h4>
+                         <h4 class="page__title">1. Способы выравнивания</h4>
 
+                           <!-- code -->
+                        <div style="align-self: flex-start;flex-grow: 1;" class="code-wrapper">
+                            <h4 class="language">CSS</h4>
+                            <div class="code-example">
+                                <pre>
+   <code id="btn-code-1">.child {
+    position: absolute;
+    top: 50%;  /* расположите верхний край элемента в середине родительского */
+    left: 50%; /* расположите левый край элемента в середине родительского элемента */
+    transform: translate(-50%, -50%); /* Это сокращение от translateX(-50%) и translateY(-50%) */
+}
+   </code>
+</pre>
+                                <img class="btn-copy copy__icon" data-clipboard-target="#btn-code-1"
+                                    src="../assets/svg/copy.svg" alt="copy">
+                            </div>
+                        </div>
+                        <!-- /code -->
                     </div>
                </section>
           </main>
